@@ -1,0 +1,15 @@
+PODS:
+  - geos (3.5.0)
+  - GEOSwift (2.1.2):
+    - geos (= 3.5.0)
+
+DEPENDENCIES:
+  - GEOSwift (~> 2.1.2)
+
+SPEC CHECKSUMS:
+  geos: e96c6ca3f3ce02d20feaa8d90d4af383e11e7198
+  GEOSwift: 673db2ef2867306191b58c93fd9fe8f46be30e66
+
+PODFILE CHECKSUM: cb8fd2c6328310fe439b717fe729ebcc023c910c
+
+COCOAPODS: 1.4.0

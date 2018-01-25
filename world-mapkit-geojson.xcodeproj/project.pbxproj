@@ -12,9 +12,14 @@
 		C8B179BA201946E600AF2FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B179B8201946E600AF2FB3 /* Main.storyboard */; };
 		C8B179BC201946E600AF2FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B179BB201946E600AF2FB3 /* Assets.xcassets */; };
 		C8B179BF201946E600AF2FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B179BD201946E600AF2FB3 /* LaunchScreen.storyboard */; };
+		C8B179C7201A5ABD00AF2FB3 /* countries.geojson in Resources */ = {isa = PBXBuildFile; fileRef = C8B179C6201A5ABC00AF2FB3 /* countries.geojson */; };
+		E1A7560A4990242E152EB311 /* Pods_world_mapkit_geojson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AE6616AC70E2620AC4CA26 /* Pods_world_mapkit_geojson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E3091648F74300B2E67C88F /* Pods-world-mapkit-geojson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-world-mapkit-geojson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-world-mapkit-geojson/Pods-world-mapkit-geojson.debug.xcconfig"; sourceTree = "<group>"; };
+		43AE6616AC70E2620AC4CA26 /* Pods_world_mapkit_geojson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_world_mapkit_geojson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718D2F2C05449DAAE758D8BE /* Pods-world-mapkit-geojson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-world-mapkit-geojson.release.xcconfig"; path = "Pods/Target Support Files/Pods-world-mapkit-geojson/Pods-world-mapkit-geojson.release.xcconfig"; sourceTree = "<group>"; };
 		C8B179B1201946E600AF2FB3 /* world-mapkit-geojson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "world-mapkit-geojson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B179B4201946E600AF2FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8B179B6201946E600AF2FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C8B179BB201946E600AF2FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B179BE201946E600AF2FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8B179C0201946E600AF2FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B179C6201A5ABC00AF2FB3 /* countries.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A7560A4990242E152EB311 /* Pods_world_mapkit_geojson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F20D7666A2A46DF69349ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43AE6616AC70E2620AC4CA26 /* Pods_world_mapkit_geojson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8B179A8201946E600AF2FB3 = {
 			isa = PBXGroup;
 			children = (
 				C8B179B3201946E600AF2FB3 /* world-mapkit-geojson */,
 				C8B179B2201946E600AF2FB3 /* Products */,
+				F106CB58FFBD2165ED365131 /* Pods */,
+				00F20D7666A2A46DF69349ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				C8B179BB201946E600AF2FB3 /* Assets.xcassets */,
 				C8B179BD201946E600AF2FB3 /* LaunchScreen.storyboard */,
 				C8B179C0201946E600AF2FB3 /* Info.plist */,
+				C8B179C6201A5ABC00AF2FB3 /* countries.geojson */,
 			);
 			path = "world-mapkit-geojson";
+			sourceTree = "<group>";
+		};
+		F106CB58FFBD2165ED365131 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E3091648F74300B2E67C88F /* Pods-world-mapkit-geojson.debug.xcconfig */,
+				718D2F2C05449DAAE758D8BE /* Pods-world-mapkit-geojson.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8B179C3201946E600AF2FB3 /* Build configuration list for PBXNativeTarget "world-mapkit-geojson" */;
 			buildPhases = (
+				ACCA1FBC81A88F6D64D419D5 /* [CP] Check Pods Manifest.lock */,
 				C8B179AD201946E600AF2FB3 /* Sources */,
 				C8B179AE201946E600AF2FB3 /* Frameworks */,
 				C8B179AF201946E600AF2FB3 /* Resources */,
+				119C04DEC39455D190B32F30 /* [CP] Embed Pods Frameworks */,
+				58B196D50D3CC5B72CC46828 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B179C7201A5ABD00AF2FB3 /* countries.geojson in Resources */,
 				C8B179BF201946E600AF2FB3 /* LaunchScreen.storyboard in Resources */,
 				C8B179BC201946E600AF2FB3 /* Assets.xcassets in Resources */,
 				C8B179BA201946E600AF2FB3 /* Main.storyboard in Resources */,
@@ -130,6 +161,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		119C04DEC39455D190B32F30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-world-mapkit-geojson/Pods-world-mapkit-geojson-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GEOSwift/GEOSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/geos/geos.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GEOSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/geos.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-world-mapkit-geojson/Pods-world-mapkit-geojson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58B196D50D3CC5B72CC46828 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-world-mapkit-geojson/Pods-world-mapkit-geojson-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACCA1FBC81A88F6D64D419D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-world-mapkit-geojson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8B179AD201946E600AF2FB3 /* Sources */ = {
@@ -272,6 +359,7 @@
 		};
 		C8B179C4201946E600AF2FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3091648F74300B2E67C88F /* Pods-world-mapkit-geojson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		C8B179C5201946E600AF2FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718D2F2C05449DAAE758D8BE /* Pods-world-mapkit-geojson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
